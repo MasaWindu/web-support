@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>まいにちレシピ | あなただけの賢いレシピ帳</title>
+    <meta name="description" content="AIがレシピを自動読み込み。写真とカレンダーで料理の思い出を残す、新しいレシピ管理アプリ。">
+    <link rel="icon" type="image/png" href="/assets/logo.png" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="glass" style="position: fixed; top: 0; width: 100%; z-index: 1000; padding: 1rem 0;">
+      <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+        <div style="display: flex; align-items: center; gap: 1rem;">
+          <img src="/assets/logo.png" alt="Logo" style="width: 40px; height: 40px; border-radius: 10px;">
+          <span style="font-weight: 800; font-size: 1.2rem;">まいにちレシピ</span>
+        </div>
+        <div class="cta-group">
+          <a href="#download" class="btn btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.9rem;">ダウンロード</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="app-badge">Apple App Store 対応予定</span>
+          <h1><span>まいにちレシピ</span>明日が楽しみになるレシピ帳。</h1>
+          <p class="hero-desc jp">ネットで見つけた「おいしそう」を、AIが瞬時にあなたのレシピ帳へお届け。料理を、一生の思い出に変えましょう。</p>
+          <div class="cta-group">
+            <a href="#" class="btn btn-primary" style="padding: 1rem 2rem;">
+              <span>App Storeから</span>
+            </a>
+            <a href="#features" class="btn btn-outline">詳しく見る</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="phone-mockup">
+            <div class="phone-screen" style="background: url('/assets/screenshot_list.png') center/cover;">
+              <!-- Real screenshot used, no manual overlay needed -->
+            </div>
+            <div class="dynamic-blur" style="background: var(--primary);"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Features -->
+    <section id="features">
+      <div class="container">
+        <div class="section-title">
+          <h2>料理がもっと自由になる。</h2>
+          <p class="jp">「まいにちレシピ」だけの特別な体験</p>
+        </div>
+        <div class="feature-grid">
+          <div class="feature-card glass">
+            <div class="icon-box" style="background: rgba(255, 107, 107, 0.1); color: var(--primary);">✨</div>
+            <h3 class="jp">AI自動取り込み</h3>
+            <p class="jp" style="font-size: 0.9rem; color: var(--text-color); opacity: 0.7;">レシピサイトのURLを貼るだけ。AIが材料や作り方を正確に抽出します。もう手入力の煩わしさはありません。</p>
+          </div>
+          <div class="feature-card glass">
+            <div class="icon-box" style="background: rgba(78, 205, 196, 0.1); color: var(--secondary);">📸</div>
+            <h3 class="jp">思い出（メモリー）</h3>
+            <p class="jp" style="font-size: 0.9rem; color: var(--text-color); opacity: 0.7;">作った料理は写真と一緒にカレンダーへ。いつ、何を作ったかが一目でわかる、あなただけの食のアルバムが育ちます。</p>
+          </div>
+          <div class="feature-card glass">
+            <div class="icon-box" style="background: rgba(255, 230, 109, 0.1); color: #d4ac0d;">🎨</div>
+            <h3 class="jp">自由なカスタマイズ</h3>
+            <p class="jp" style="font-size: 0.9rem; color: var(--text-color); opacity: 0.7;">好きな写真を背景に設定したり、フォントやテーマカラーを自由に変更。使うたびに愛着がわくデザインを、あなた自身で。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Memories Gallery -->
+    <section id="memories" style="background: linear-gradient(to bottom, transparent, rgba(var(--primary-rgb), 0.05)); overflow: hidden;">
+      <div class="container">
+        <div class="section-title">
+          <h2>料理を、一生の思い出に。</h2>
+          <p class="jp">日々の「おいしい」をカレンダーと写真で残す</p>
+        </div>
+        <div class="memory-gallery" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; padding: 2rem 0;">
+          <div class="glass" style="border-radius: 24px; overflow: hidden; transform: rotate(-2deg); transition: var(--transition);">
+            <img src="https://images.unsplash.com/photo-1496042399014-dc73c4f2bde1?auto=format&fit=crop&w=800&q=80" alt="Memory" style="width: 100%; height: 250px; object-fit: cover;">
+            <div style="padding: 1.5rem;">
+              <p class="jp" style="font-size: 0.8rem; font-weight: 700; color: var(--primary);">2026.03.25</p>
+              <h4 class="jp" style="font-size: 1.1rem; margin-top: 0.25rem;">週末の贅沢ブランチ</h4>
+            </div>
+          </div>
+          <div class="glass" style="border-radius: 24px; overflow: hidden; transform: rotate(1deg); transition: var(--transition); margin-top: 1.5rem;">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80" alt="Memory" style="width: 100%; height: 250px; object-fit: cover;">
+            <div style="padding: 1.5rem;">
+              <p class="jp" style="font-size: 0.8rem; font-weight: 700; color: var(--primary);">2026.03.20</p>
+              <h4 class="jp" style="font-size: 1.1rem; margin-top: 0.25rem;">彩り野菜のサラダボウル</h4>
+            </div>
+          </div>
+          <div class="glass" style="border-radius: 24px; overflow: hidden; transform: rotate(-1deg); transition: var(--transition);">
+            <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=800&q=80" alt="Memory" style="width: 100%; height: 250px; object-fit: cover;">
+            <div style="padding: 1.5rem;">
+              <p class="jp" style="font-size: 0.8rem; font-weight: 700; color: var(--primary);">2026.03.15</p>
+              <h4 class="jp" style="font-size: 1.1rem; margin-top: 0.25rem;">旬のフルーツタルト</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- AI Demo Simulator -->
+    <section class="ai-demo" style="background: var(--card-bg);">
+      <div class="container">
+        <div class="section-title">
+          <h2>魔法のインポート体験</h2>
+          <p class="jp">実際に試してみてください</p>
+        </div>
+        <div class="ai-extractor-box glass">
+          <div class="url-bar">
+            <span>🔗</span>
+            <input type="text" id="recipe-url" placeholder="https://recipe.example.com/pasta" value="https://example.com/delicious-pasta-recipe">
+            <button class="extract-btn" id="extract-trigger">AIで抽出</button>
+          </div>
+          
+          <div id="ai-loading" style="display: none; padding: 2rem;">
+            <div style="font-size: 2rem; animation: rotate 2s linear infinite;">🪄</div>
+            <p class="jp">AIがレシピを解析中...</p>
+          </div>
+
+          <div class="ai-result" id="extraction-result">
+            <div class="recipe-preview-img">
+              <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80" alt="Recipe preview" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div>
+              <h3 class="jp" style="margin-bottom: 0.5rem; color: var(--primary);">完熟トマトのペスカトーレ</h3>
+              <p class="jp" style="margin-bottom: 1rem; font-size: 0.85rem; opacity: 0.8;">【材料】スパゲティ, トマト缶, あさり, えび, にんにく, オリーブオイル...</p>
+              <div style="display: flex; gap: 0.5rem;">
+                <span class="glass" style="padding: 4px 10px; border-radius: 8px; font-size: 0.75rem;">イタリアン</span>
+                <span class="glass" style="padding: 4px 10px; border-radius: 8px; font-size: 0.75rem;">魚介類</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Style Simulator -->
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <h2>あなた色に、染める。</h2>
+          <p class="jp">フォントやカラー、背景も自由自在</p>
+        </div>
+        <div class="customizer-preview">
+          <div class="glass" id="demo-mockup" style="width: 320px; padding: 2rem; border-radius: 32px; text-align: center; transition: var(--transition);">
+            <div style="width: 80px; height: 80px; background: var(--primary); border-radius: 20px; margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem;">🍳</div>
+            <h3 class="demo-text">毎日の料理を楽しもう</h3>
+            <p class="demo-desc jp" style="font-size: 0.8rem; margin-top: 1rem;">背景画像やカラーが変わるだけで、アプリの雰囲気がガラッと変わります。</p>
+          </div>
+          
+          <div style="display: flex; gap: 2rem; align-items: center;">
+            <div>
+              <p class="jp" style="font-size: 0.8rem; margin-bottom: 0.75rem; font-weight: 700;">テーマカラー</p>
+              <div class="color-swatches">
+                <div class="swatch active" style="background: #FF6B6B;" data-color="#FF6B6B"></div>
+                <div class="swatch" style="background: #4ECDC4;" data-color="#4ECDC4"></div>
+                <div class="swatch" style="background: #9b59b6;" data-color="#9b59b6"></div>
+                <div class="swatch" style="background: #f1c40f;" data-color="#f1c40f"></div>
+              </div>
+            </div>
+            <div>
+              <p class="jp" style="font-size: 0.8rem; margin-bottom: 0.75rem; font-weight: 700;">フォント</p>
+              <select id="font-switcher" class="glass" style="padding: 0.5rem 1rem; border-radius: 10px; border: none; font-family: inherit;">
+                <option value="outfit">標準 (Outfit)</option>
+                <option value="nikumaru">丸ゴシック (Nikumaru)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="padding: 4rem 0; border-top: 1px solid var(--glass-border); text-align: center;">
+      <div class="container">
+        <img src="/assets/logo.png" alt="Logo" style="width: 60px; height: 60px; border-radius: 15px; margin-bottom: 1.5rem;">
+        <h3 style="margin-bottom: 1rem;">まいにちレシピ</h3>
+        <p class="jp" style="opacity: 0.6; font-size: 0.9rem;">Cooking Diary & Intelligent Recipe Manager</p>
+        <div style="margin-top: 2rem; display: flex; justify-content: center; gap: 2rem; font-size: 0.9rem; opacity: 0.8;">
+          <a href="#" style="color: inherit; text-decoration: none;">プライバシーポリシー</a>
+          <a href="#" style="color: inherit; text-decoration: none;">お問い合わせ</a>
+        </div>
+        <p style="margin-top: 3rem; font-size: 0.8rem; opacity: 0.4;">&copy; 2026 Mainitigohan. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Theme Toggle -->
+    <div class="theme-toggle" id="mode-toggle">🌙</div>
+
+    <script type="module" src="/src/main.js"></script>
+
+    <style>
+      @keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    </style>
+  </body>
+</html>
